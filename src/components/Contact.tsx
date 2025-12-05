@@ -68,7 +68,7 @@ const Contact = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
               asChild
             >
-              <a href="https://www.uusmaa.ee" target="_blank" rel="noopener noreferrer">
+              <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 w-5 h-5" />
                 Vaata minu pakkumisi Uus Maa lehel
               </a>

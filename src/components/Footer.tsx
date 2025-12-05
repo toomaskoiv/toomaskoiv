@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="font-display text-xl font-bold text-primary-foreground">M</span>
+              <span className="font-display text-xl font-bold text-primary-foreground">TK</span>
             </div>
-            <span className="font-display text-xl font-semibold text-secondary-foreground">Maakler</span>
+            <span className="font-display text-xl font-semibold text-secondary-foreground">Toomas Koiv</span>
           </div>
 
           <div className="flex items-center gap-6 text-secondary-foreground/70">
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-secondary-foreground/10 text-center text-secondary-foreground/50 text-sm">
-          © {new Date().getFullYear()} Kinnisvaramaakler. Kõik õigused kaitstud.
+          © {new Date().getFullYear()} Toomas Koiv. Kõik õigused kaitstud.
         </div>
       </div>
     </footer>
