@@ -60,7 +60,7 @@ const Hero = () => {
               className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold text-lg px-8 py-6"
               asChild
             >
-              <a href="https://www.uusmaa.ee" target="_blank" rel="noopener noreferrer">
+              <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
                 Vaata pakkumisi
               </a>
             </Button>

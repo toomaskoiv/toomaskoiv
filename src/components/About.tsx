@@ -1,4 +1,5 @@
 import { Award, Heart, Users, Shield } from "lucide-react";
+import profileImage from "@/assets/toomas-koiv.jpg";
 
 const About = () => {
   const values = [
@@ -31,14 +32,11 @@ const About = () => {
           {/* Image/Avatar side */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <div className="aspect-[4/5] bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-40 h-40 mx-auto rounded-full bg-primary/20 flex items-center justify-center mb-6">
-                    <span className="font-display text-6xl font-bold text-secondary">M</span>
-                  </div>
-                  <p className="text-muted-foreground">Teie foto siia</p>
-                </div>
-              </div>
+              <img 
+                src={profileImage} 
+                alt="Toomas Koiv - Kinnisvaramaakler"
+                className="w-full h-auto object-cover"
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl">
               <div className="font-display text-4xl font-bold text-primary-foreground">10+</div>
@@ -50,7 +48,7 @@ const About = () => {
           <div>
             <span className="text-primary font-semibold uppercase tracking-wider text-sm">Minust</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mt-2 mb-6">
-              Teie usaldusväärne kinnisvarapartner
+              Toomas Koiv
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Tere! Olen kogenud kinnisvaramaakler, kes on aidanud sadu peresid leida 
