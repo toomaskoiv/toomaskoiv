@@ -6,25 +6,25 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Telefon",
-      value: "+372 5XX XXXX",
-      href: "tel:+3725XXXXXXX",
+      value: "+372 509 6664",
+      href: "tel:+3725096664",
     },
     {
       icon: Mail,
       label: "E-post",
-      value: "maakler@uusmaa.ee",
-      href: "mailto:maakler@uusmaa.ee",
+      value: "toomas.koiv@uusmaa.ee",
+      href: "mailto:toomas.koiv@uusmaa.ee",
     },
     {
       icon: MapPin,
       label: "Asukoht",
-      value: "Tallinn, Eesti",
+      value: "Tallinn ja Harjumaa",
       href: "#",
     },
     {
       icon: Clock,
       label: "Tööaeg",
-      value: "E-R 9:00-18:00",
+      value: "9:00-21:00, 7 päeva nädalas",
       href: "#",
     },
   ];
