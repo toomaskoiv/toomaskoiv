@@ -39,8 +39,8 @@ const About = () => {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl">
-              <div className="font-display text-4xl font-bold text-primary-foreground">10+</div>
-              <div className="text-primary-foreground/80">aastat kogemust</div>
+              <div className="font-display text-4xl font-bold text-primary-foreground">2,5</div>
+              <div className="text-primary-foreground/80">aastat maaklerina</div>
             </div>
           </div>
 
@@ -51,14 +51,16 @@ const About = () => {
               Toomas Koiv
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Tere! Olen kogenud kinnisvaramaakler, kes on aidanud sadu peresid leida 
-              nende unistuste kodu. Minu eesmärk on muuta kinnisvaratehing teie jaoks 
-              võimalikult sujuvaks ja stressivabaks.
+              Tere! Olen kinnisvaramaakler juba 2,5 aastat ning toon sellesse töösse
+              kaasa pikaajalise tootmisettevõtte juhtimise tausta. Just sealt on pärit
+              minu oskus inimesi kuulata, protsesse hallata ja keerulisi olukordi
+              lahendada — omadused, mis kinnisvaratehingus on hindamatud.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Töötan Uus Maa meeskonnas, mis on üks Eesti tunnustatumaid kinnisvarabüroosid. 
-              See annab mulle juurdepääsu laiale võrgustikule ja parimatele turuandmetele, 
-              et teie kinnisvara parima hinnaga müüa.
+              Töötan Uus Maa meeskonnas, ühes Eesti tunnustatumas kinnisvarabüroos.
+              See annab mulle juurdepääsu laiale võrgustikule ja parimatele turuandmetele,
+              et iga tehing — olgu see müük, ost või üür — sujuks teie jaoks
+              võimalikult mugavalt ja tulemuslikult.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
