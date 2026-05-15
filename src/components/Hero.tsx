@@ -72,18 +72,18 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">10+</div>
-              <div className="text-sm text-muted-foreground">aastat kogemust</div>
+              <div className="font-display text-3xl font-bold text-secondary">2,5</div>
+              <div className="text-sm text-muted-foreground">aastat maaklerina</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">200+</div>
-              <div className="text-sm text-muted-foreground">tehingut</div>
+              <div className="font-display text-3xl font-bold text-secondary">100+</div>
+              <div className="text-sm text-muted-foreground">klienti</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">98%</div>
-              <div className="text-sm text-muted-foreground">rahulolu</div>
+              <div className="font-display text-3xl font-bold text-secondary">15+</div>
+              <div className="text-sm text-muted-foreground">aastat juhtimist</div>
             </div>
           </div>
         </div>
