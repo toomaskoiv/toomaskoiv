@@ -72,7 +72,7 @@ export default {
       },
       fontFamily: {
         display: ["Playfair Display", "serif"],
-        sans: ["DM Sans", "sans-serif"],
+        sans: ["Inter Tight", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

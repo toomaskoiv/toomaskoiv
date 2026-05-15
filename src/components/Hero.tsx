@@ -23,7 +23,7 @@ const Hero = () => {
                 <Star key={star} className="w-5 h-5 fill-primary text-primary" />
               ))}
             </div>
-            <span className="text-muted-foreground font-medium">100+ rahulolev klient</span>
+            <span className="text-muted-foreground font-medium">100+ rahulolevat klienti</span>
           </div>
 
           <h1 
@@ -38,9 +38,10 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed opacity-0 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            Olen kogenud kinnisvaramaakler Uus Maa meeskonnas. Aitan teil leida 
-            unistuste kodu või müüa teie kinnisvara parima hinnaga. Professionaalne 
-            teenindus ja personaalne lähenemine igas tehingus.
+            Olen kinnisvaramaakler Uus Maa meeskonnas. Toon kaasa pikaajalise
+            tootmisettevõtte juhtimiskogemuse ning oskuse inimesi kuulata ja
+            mõista. Aitan teil leida unistuste kodu, müüa kinnisvara parima
+            hinnaga või leida sobiva üürilahenduse — soojalt ja personaalselt.
           </p>
 
           <div 
@@ -71,18 +72,18 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">10+</div>
-              <div className="text-sm text-muted-foreground">aastat kogemust</div>
+              <div className="font-display text-3xl font-bold text-secondary">2,5</div>
+              <div className="text-sm text-muted-foreground">aastat maaklerina</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">200+</div>
-              <div className="text-sm text-muted-foreground">tehingut</div>
+              <div className="font-display text-3xl font-bold text-secondary">100+</div>
+              <div className="text-sm text-muted-foreground">klienti</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">98%</div>
-              <div className="text-sm text-muted-foreground">rahulolu</div>
+              <div className="font-display text-3xl font-bold text-secondary">15+</div>
+              <div className="text-sm text-muted-foreground">aastat juhtimist</div>
             </div>
           </div>
         </div>
