@@ -38,9 +38,10 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed opacity-0 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            Olen kogenud kinnisvaramaakler Uus Maa meeskonnas. Aitan teil leida 
-            unistuste kodu või müüa teie kinnisvara parima hinnaga. Professionaalne 
-            teenindus ja personaalne lähenemine igas tehingus.
+            Olen kinnisvaramaakler Uus Maa meeskonnas. Toon kaasa pikaajalise
+            tootmisettevõtte juhtimiskogemuse ning oskuse inimesi kuulata ja
+            mõista. Aitan teil leida unistuste kodu, müüa kinnisvara parima
+            hinnaga või leida sobiva üürilahenduse — soojalt ja personaalselt.
           </p>
 
           <div 
