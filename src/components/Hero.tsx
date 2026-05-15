@@ -23,7 +23,7 @@ const Hero = () => {
                 <Star key={star} className="w-5 h-5 fill-primary text-primary" />
               ))}
             </div>
-            <span className="text-muted-foreground font-medium">100+ rahulolev klient</span>
+            <span className="text-muted-foreground font-medium">100+ rahulolevat klienti</span>
           </div>
 
           <h1 
