@@ -8,81 +8,82 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 30% 98%;
-    --foreground: 210 50% 20%;
+    /* Uus Maa brand: Navy #012169, Yellow #FFD100, Light grays #EEF1F6 / #DCE1EC / #CBD0DF */
+    --background: 0 0% 100%;
+    --foreground: 222 98% 21%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 50% 20%;
+    --card-foreground: 222 98% 21%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 50% 20%;
+    --popover-foreground: 222 98% 21%;
 
-    --primary: 42 92% 58%;
-    --primary-foreground: 210 50% 15%;
+    --primary: 222 98% 21%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 50% 25%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 218 27% 95%;
+    --secondary-foreground: 222 98% 21%;
 
-    --muted: 45 20% 94%;
-    --muted-foreground: 210 30% 40%;
+    --muted: 218 27% 95%;
+    --muted-foreground: 222 30% 35%;
 
-    --accent: 42 80% 65%;
-    --accent-foreground: 210 50% 15%;
+    --accent: 49 100% 50%;
+    --accent-foreground: 222 98% 21%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 45 20% 88%;
-    --input: 45 20% 88%;
-    --ring: 42 92% 58%;
+    --border: 220 25% 89%;
+    --input: 220 25% 89%;
+    --ring: 222 98% 21%;
 
     --radius: 0.75rem;
 
-    --warm: 30 60% 96%;
-    --warm-foreground: 25 50% 30%;
-    
-    --gold: 42 92% 58%;
-    --gold-light: 45 90% 75%;
-    --navy: 210 50% 25%;
-    --navy-light: 210 40% 35%;
+    --warm: 218 27% 97%;
+    --warm-foreground: 222 98% 21%;
+
+    --gold: 49 100% 50%;
+    --gold-light: 49 100% 70%;
+    --navy: 222 98% 21%;
+    --navy-light: 222 60% 35%;
   }
 
   .dark {
-    --background: 210 50% 10%;
-    --foreground: 45 30% 95%;
+    --background: 222 98% 10%;
+    --foreground: 218 27% 95%;
 
-    --card: 210 45% 15%;
-    --card-foreground: 45 30% 95%;
+    --card: 222 80% 14%;
+    --card-foreground: 218 27% 95%;
 
-    --popover: 210 45% 15%;
-    --popover-foreground: 45 30% 95%;
+    --popover: 222 80% 14%;
+    --popover-foreground: 218 27% 95%;
 
-    --primary: 42 92% 58%;
-    --primary-foreground: 210 50% 10%;
+    --primary: 49 100% 50%;
+    --primary-foreground: 222 98% 12%;
 
-    --secondary: 42 70% 70%;
-    --secondary-foreground: 210 50% 10%;
+    --secondary: 222 60% 20%;
+    --secondary-foreground: 218 27% 95%;
 
-    --muted: 210 40% 20%;
-    --muted-foreground: 45 20% 70%;
+    --muted: 222 50% 18%;
+    --muted-foreground: 218 20% 75%;
 
-    --accent: 42 80% 65%;
-    --accent-foreground: 210 50% 10%;
+    --accent: 49 100% 50%;
+    --accent-foreground: 222 98% 12%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 218 27% 95%;
 
-    --border: 210 40% 25%;
-    --input: 210 40% 25%;
-    --ring: 42 92% 58%;
+    --border: 222 50% 22%;
+    --input: 222 50% 22%;
+    --ring: 49 100% 50%;
 
-    --warm: 210 40% 15%;
-    --warm-foreground: 45 30% 90%;
-    
-    --gold: 42 92% 58%;
-    --gold-light: 45 90% 75%;
-    --navy: 210 50% 80%;
-    --navy-light: 210 40% 70%;
+    --warm: 222 70% 14%;
+    --warm-foreground: 218 27% 95%;
+
+    --gold: 49 100% 50%;
+    --gold-light: 49 100% 70%;
+    --navy: 218 27% 95%;
+    --navy-light: 218 30% 80%);
   }
 }
 
