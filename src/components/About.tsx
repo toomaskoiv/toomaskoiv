@@ -15,8 +15,8 @@ const About = () => {
     },
     {
       icon: Award,
-      title: "Professionaalsus",
-      description: "Pikaajaline kogemus ja põhjalik turutundmine tagavad parima tulemuse.",
+      title: "Tootmisettevõtte taust",
+      description: "Aastatepikkune juhtimiskogemus annab oskuse hallata protsesse, lahendada olukordi ja luua usaldust.",
     },
     {
       icon: Users,
