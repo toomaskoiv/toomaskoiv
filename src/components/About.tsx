@@ -38,9 +38,9 @@ const About = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl">
-              <div className="font-display text-4xl font-bold text-primary-foreground">2,5</div>
-              <div className="text-primary-foreground/80">aastat maaklerina</div>
+            <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl text-center">
+              <div className="font-display text-4xl font-bold text-primary-foreground">2023</div>
+              <div className="text-primary-foreground/80">alates maakler</div>
             </div>
           </div>
 
@@ -51,7 +51,7 @@ const About = () => {
               Toomas Koiv
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Tere! Olen kinnisvaramaakler juba 2,5 aastat ning toon sellesse töösse
+              Tere! Olen kinnisvaramaakler alates 2023. aastast ning toon sellesse töösse
               kaasa pikaajalise tootmisettevõtte juhtimise tausta. Just sealt on pärit
               minu oskus inimesi kuulata, protsesse hallata ja keerulisi olukordi
               lahendada — omadused, mis kinnisvaratehingus on hindamatud.

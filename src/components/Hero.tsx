@@ -75,8 +75,8 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
-              <div className="font-display text-3xl font-bold text-secondary">2,5</div>
-              <div className="text-sm text-muted-foreground">aastat maaklerina</div>
+              <div className="font-display text-3xl font-bold text-secondary">2023</div>
+              <div className="text-sm text-muted-foreground">alates maakler</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
