@@ -50,10 +50,13 @@ const Hero = () => {
           >
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-6"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6"
+              asChild
             >
-              Võta ühendust
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <a href="#kontakt">
+                Võta ühendust
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
             <Button 
               size="lg" 
