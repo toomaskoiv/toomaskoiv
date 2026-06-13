@@ -66,9 +66,11 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
-              <Phone className="w-4 h-4 mr-2" />
-              Helista
+            <Button asChild className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+              <a href="tel:+3725096664">
+                <Phone className="w-4 h-4 mr-2" />
+                Helista
+              </a>
             </Button>
           </div>
         )}
