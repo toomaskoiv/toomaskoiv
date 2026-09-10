@@ -73,17 +73,17 @@ const Hero = () => {
           >
             <div className="text-center">
               <div className="font-display text-3xl font-bold text-secondary">2023</div>
-              <div className="text-sm text-muted-foreground">alates maakler</div>
+              <div className="text-sm text-muted-foreground">alates maaklerina</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
               <div className="font-display text-3xl font-bold text-secondary">100+</div>
-              <div className="text-sm text-muted-foreground">klienti</div>
+              <div className="text-sm text-muted-foreground">inimest kinnisvarateemadel aidatud</div>
             </div>
             <div className="w-px h-12 bg-border" />
             <div className="text-center">
               <div className="font-display text-3xl font-bold text-secondary">15+</div>
-              <div className="text-sm text-muted-foreground">aastat juhtimist</div>
+              <div className="text-sm text-muted-foreground">aastat juhtimiskogemust</div>
             </div>
           </div>
         </div>
