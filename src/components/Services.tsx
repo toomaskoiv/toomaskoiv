@@ -27,8 +27,8 @@ const Services = () => {
     {
       icon: MessageCircle,
       title: "Konsultatsioon",
-      description: "Vajakate nõu kinnisvaraga seotud küsimustes? Pakun professionaalset konsultatsiooni.",
-      features: ["Turuväärtuse hindamine", "Investeerimisnõustamine", "Tehingute nõustamine", "Õiguslikud küsimused"],
+      description: "Plaanid kinnisvaraga tehinguid või vajad lihtsalt mõtlemiseks kaaslast? Võime vabalt arutada – kui vaja, leian ka õiged spetsialistid ja kontaktid, et saaksid kindlalt edasi minna.",
+      features: ["Vaba arutelu sinu olukorrast", "Parimate sammude planeerimine", "Õigete kontaktide leidmine", "Isiklik ja kohandatud lähenemine"],
       color: "secondary",
     },
   ];
