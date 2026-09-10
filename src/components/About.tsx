@@ -48,26 +48,22 @@ const About = () => {
           <div>
             <span className="text-primary font-semibold uppercase tracking-wider text-sm">Minust</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mt-2 mb-6">
-              Toomas Koiv
+              Toomas Kõiv
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Nii tore, et leidsid tee minu lehele — see teeb mulle tõeliselt
-              head meelt! Usun, et kodu on palju enamat kui seinad ja katus:
-              see on koht, kus algavad sinu kõige ilusamad lood. Ja just sellepärast
-              suhtun ma igasse kohtumisse ja tehingusse südamega.
+              Olen kinnisvaramaakler alates 2023. aastast ja töötan Uus Maa Kadrioru meeskonnas. Tegutsen peamiselt Tallinnas ja Harjumaal ning aitan klientidel kinnisvara müüa, osta ja üürida.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Olen kinnisvaramaakler alates 2023. aastast ning toon sellesse töösse
-              kaasa pikaajalise tootmisettevõtte juhtimise tausta. Just sealt on pärit
-              minu oskus inimesi päriselt kuulata, keerulisi olukordi rahulikult
-              lahendada ja hoida protsess sinu jaoks selge ning mugav — algusest lõpuni.
+              Enne kinnisvarasse tulekut töötasin aastaid tootmisettevõtetes ning mul on üle 15 aasta juhtimiskogemust. See taust on õpetanud mulle vastutust võtma, inimestega arvestama, keerulisi olukordi lahendama ja asju lõpuni viima.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Kinnisvaras pean kõige olulisemaks usaldust ja head suhtlust. Iga inimene ja tema olukord on erinev ning seetõttu ei usu ma ka ühe lahenduse sobivusse kõigile. Kuulan ära, räägin asjad ausalt läbi ja otsin koos kliendiga lahenduse, mis päriselt töötab.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Töötan Uus Maa meeskonnas, ühes Eesti tunnustatumas kinnisvarabüroos.
-              Minu jaoks pole sina lihtsalt klient — sa oled inimene oma loo, unistuste
-              ja muredega. Lubadus, mille ma sulle annan, on lihtne: olen aus,
-              kättesaadav ja seisan sinu huvide eest nagu enda omade eest. Loodan
-              väga, et saame peagi kohtuda — kohvitassi taga või sinu tulevase kodu uksel.
+              Minu eesmärk on, et klient tunneks kogu protsessi vältel, et tema asjad on heades kätes — alates esimesest kohtumisest kuni tehingu lõpuni.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              Kui sul on kinnisvaraga seoses mõni küsimus või plaan, räägime. Ka siis, kui sa ei ole veel otsustanud, mida täpselt teha.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
