@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Heart,
       title: "Personaalne lähenemine",
-      description: "Iga klient on minu jaoks oluline. Kuulan teie soove ja leian parima lahenduse.",
+      description: "Iga müüja, ostja ja kinnisvara on erinev. Kuulan ära sinu eesmärgi ja paneme koos paika kõige mõistlikuma lahenduse.",
     },
     {
       icon: Shield,
-      title: "Usaldusväärne partner",
-      description: "Aus ja läbipaistev suhtlus kogu tehingu vältel. Teie huvid on alati esiplaanil.",
+      title: "Aus suhtlus",
+      description: "Räägin asjadest otse ja annan ka siis ausa hinnangu, kui see ei ole kõige mugavam vastus.",
     },
     {
       icon: Award,
-      title: "Tootmisettevõtte taust",
-      description: "Aastatepikkune juhtimiskogemus annab oskuse hallata protsesse, lahendada olukordi ja luua usaldust.",
+      title: "15+ aastat juhtimiskogemust",
+      description: "Pikaajaline kogemus tootmisettevõtete juhtimises on õpetanud mind vastutama, lahendusi leidma ja kokkulepetest kinni pidama.",
     },
     {
       icon: Users,
-      title: "Uus Maa meeskond",
-      description: "Olen osa Eesti suurimast kinnisvarabüroost, mis tagab laia võrgustiku ja võimalused.",
+      title: "Uus Maa",
+      description: "Töötan Uus Maa Kadrioru meeskonnas, kus saan kasutada tugeva kinnisvarabüroo teadmisi, kontakte ja võimalusi.",
     },
   ];
 
@@ -40,7 +40,7 @@ const About = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary rounded-2xl p-6 shadow-xl text-center">
               <div className="font-display text-4xl font-bold text-primary-foreground">2023</div>
-              <div className="text-primary-foreground/80">alates maakler</div>
+              <div className="text-primary-foreground/80">alates maaklerina</div>
             </div>
           </div>
 
