@@ -6,9 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="font-display text-xl font-bold text-primary-foreground">TK</span>
-            </div>
+            <div className="w-10 h-10 rounded-full bg-primary flex-shrink-0" />
             <span className="font-display text-xl font-semibold text-secondary-foreground uppercase tracking-wide">TK | TOOMAS KÕIV</span>
           </div>
 
