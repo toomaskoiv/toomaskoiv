@@ -28,7 +28,7 @@ const Services = () => {
       icon: MessageCircle,
       title: "Konsultatsioon",
       description: "Plaanid kinnisvaraga tehinguid või vajad lihtsalt mõtlemiseks kaaslast? Võime vabalt arutada – kui vaja, leian ka õiged spetsialistid ja kontaktid, et saaksid kindlalt edasi minna.",
-      features: ["Vaba arutelu sinu olukorrast", "Parimate sammude planeerimine", "Õigete kontaktide leidmine", "Isiklik ja kohandatud lähenemine"],
+      features: [],
       color: "secondary",
     },
   ];
@@ -74,16 +74,18 @@ const Services = () => {
                 {service.description}
               </p>
 
-              <ul className="space-y-3 mb-8">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
-                    <div className={`w-2 h-2 rounded-full ${
-                      service.color === "primary" ? "bg-primary" : "bg-secondary"
-                    }`} />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              {service.features.length > 0 && (
+                <ul className="space-y-3 mb-8">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3">
+                      <div className={`w-2 h-2 rounded-full ${
+                        service.color === "primary" ? "bg-primary" : "bg-secondary"
+                      }`} />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <Button 
                 variant="ghost" 
