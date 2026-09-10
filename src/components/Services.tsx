@@ -74,16 +74,18 @@ const Services = () => {
                 {service.description}
               </p>
 
-              <ul className="space-y-3 mb-8">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
-                    <div className={`w-2 h-2 rounded-full ${
-                      service.color === "primary" ? "bg-primary" : "bg-secondary"
-                    }`} />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              {service.features.length > 0 && (
+                <ul className="space-y-3 mb-8">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-3">
+                      <div className={`w-2 h-2 rounded-full ${
+                        service.color === "primary" ? "bg-primary" : "bg-secondary"
+                      }`} />
+                      <span className="text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <Button 
                 variant="ghost" 
