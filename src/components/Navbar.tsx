@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
               <span className="font-display text-xl font-bold text-primary-foreground">TK</span>
             </div>
-            <span className="font-display text-xl font-semibold text-secondary">Toomas Koiv</span>
+            <span className="font-display text-xl font-semibold text-secondary uppercase tracking-wide">TK | TOOMAS KÕIV</span>
           </a>
 
           {/* Desktop Nav */}

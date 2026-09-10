@@ -1,4 +1,4 @@
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import heroImage from "@/assets/hero-home.jpg";
 
@@ -17,31 +17,28 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-2xl">
-          <div className="flex items-center gap-2 mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="flex -space-x-1">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <Star key={star} className="w-5 h-5 fill-primary text-primary" />
-              ))}
-            </div>
-            <span className="text-muted-foreground font-medium">100+ rahulolevat klienti</span>
+          <div 
+            className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
+            <span>Uus Maa Kadriorg</span>
           </div>
 
           <h1 
             className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            Teie usaldusväärne partner{" "}
-            <span className="text-primary">kinnisvaratehingutes</span>
+            Toomas Kõiv{" "}
+            <span className="text-primary">– Sinu kinnisvaramaakler Tallinnas ja Harjumaal</span>
           </h1>
 
           <p 
             className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed opacity-0 animate-fade-in"
             style={{ animationDelay: "0.3s" }}
           >
-            Olen kinnisvaramaakler Uus Maa meeskonnas. Toon kaasa pikaajalise
-            tootmisettevõtte juhtimiskogemuse ning oskuse inimesi kuulata ja
-            mõista. Aitan teil leida unistuste kodu, müüa kinnisvara parima
-            hinnaga või leida sobiva üürilahenduse — soojalt ja personaalselt.
+            Aitan Sul müüa, osta ja üürida kinnisvara läbimõeldult ja personaalselt.
+            Minu jaoks ei ole kinnisvaratehing lihtsalt number – oluline on leida lahendus,
+            millega klient saab päriselt rahul olla.
           </p>
 
           <div 
@@ -53,8 +50,8 @@ const Hero = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6"
               asChild
             >
-              <a href="#kontakt">
-                Võta ühendust
+              <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
+                Soovin müüa
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
@@ -64,8 +61,8 @@ const Hero = () => {
               className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold text-lg px-8 py-6"
               asChild
             >
-              <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
-                Vaata pakkumisi
+              <a href="#kontakt">
+                Võta ühendust
               </a>
             </Button>
           </div>
