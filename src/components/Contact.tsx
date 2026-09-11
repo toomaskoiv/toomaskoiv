@@ -23,8 +23,8 @@ const Contact = () => {
     },
     {
       icon: Clock,
-      label: "Tööaeg",
-      value: "9:00-21:00, 7 päeva nädalas",
+      label: "Kättesaadavus",
+      value: "Kokkuleppel ka õhtuti ja nädalavahetustel",
       href: "#",
     },
   ];
@@ -40,9 +40,7 @@ const Contact = () => {
               Võtame ühendust!
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Kas teil on küsimusi kinnisvara kohta? Soovite oma kodu müüa või 
-              uut leida? Võtke minuga julgelt ühendust – esimene konsultatsioon 
-              on alati tasuta!
+              Kas Sul on küsimus kinnisvara kohta, plaanid oma kodu müüa või otsid uut? Võta minuga julgelt ühendust. Arutame Sinu olukorra läbi ja vaatame, milline võiks olla järgmine mõistlik samm.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
@@ -55,9 +53,9 @@ const Contact = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
                     <item.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-sm text-muted-foreground">{item.label}</div>
-                    <div className="font-semibold text-secondary">{item.value}</div>
+                    <div className="break-words font-semibold text-secondary">{item.value}</div>
                   </div>
                 </a>
               ))}
@@ -65,12 +63,12 @@ const Contact = () => {
 
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              className="h-auto whitespace-normal bg-primary py-3 text-center font-semibold text-primary-foreground hover:bg-primary/90"
               asChild
             >
               <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 w-5 h-5" />
-                Vaata minu pakkumisi Uus Maa lehel
+                Vaata minu aktiivseid pakkumisi Uus Maa lehel
               </a>
             </Button>
           </div>
@@ -89,7 +87,7 @@ const Contact = () => {
                   <input
                     type="text"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
-                    placeholder="Teie nimi"
+                    placeholder="Sinu nimi"
                   />
                 </div>
                 <div>
@@ -111,7 +109,7 @@ const Contact = () => {
                 <input
                   type="email"
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
-                  placeholder="teie@email.ee"
+                    placeholder="sinu@email.ee"
                 />
               </div>
 
@@ -122,12 +120,13 @@ const Contact = () => {
                 <select
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                 >
-                  <option value="">Valige teema</option>
-                  <option value="sale">Soovin müüa kinnisvara</option>
-                  <option value="buy">Soovin osta kinnisvara</option>
-                  <option value="rent">Üüriküsimused</option>
+                  <option value="">Vali teema</option>
+                  <option value="sale">Kinnisvara müük</option>
+                  <option value="buy">Kinnisvara ost</option>
+                  <option value="rent">Üüriteenus</option>
+                  <option value="valuation">Kinnisvara hind</option>
                   <option value="consultation">Konsultatsioon</option>
-                  <option value="other">Muu</option>
+                  <option value="other">Muu küsimus</option>
                 </select>
               </div>
 
@@ -138,7 +137,7 @@ const Contact = () => {
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none"
-                  placeholder="Kirjeldage oma soovi..."
+                  placeholder="Kirjelda oma soovi..."
                 />
               </div>
 
