@@ -1,28 +1,25 @@
-import { Calendar, ArrowRight, Clock } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Blog = () => {
   const posts = [
     {
-      title: "10 nippi kodu müügiks ettevalmistamisel",
-      excerpt: "Kuidas muuta oma kodu ostjate jaoks atraktiivsemaks ja saavutada parem müügihind? Jagan praktilisi nippe.",
-      date: "15. dets 2024",
-      readTime: "5 min",
+      title: "Kuidas määrata korterile õige müügihind? 7 asja, mida omanik peaks teadma",
+      excerpt: "Mida tasub enne müügihinna määramist arvesse võtta ja kuidas vältida levinumaid hinnastamisvigu?",
+      date: "September 2026",
       category: "Müügi nõuanded",
     },
     {
-      title: "Millal on õige aeg kinnisvara osta?",
-      excerpt: "Turu ajastamine on keeruline, aga on märke, millele tähelepanu pöörata. Selgitan, mida vaadata.",
-      date: "10. dets 2024",
-      readTime: "7 min",
+      title: "Kas praegu on õige aeg Tallinnas kinnisvara müüa?",
+      excerpt: "Millised turuolukorra märgid aitavad otsustada, kas müügiga alustada praegu või veel oodata?",
+      date: "September 2026",
       category: "Turu analüüs",
     },
     {
-      title: "Esmaostja ABC: mida teada enne kodu ostmist",
-      excerpt: "Esimese kodu ostmine on põnev, aga ka väljakutseid täis. Siin on olulisemad asjad, mida teada.",
-      date: "5. dets 2024",
-      readTime: "8 min",
-      category: "Ostja juhend",
+      title: "5 põhjust, miks korter müügis ei lähe",
+      excerpt: "Levinumad põhjused, mis võivad müüki pidurdada, ning küsimused, mida tasub oma müügiplaani juures üle vaadata.",
+      date: "September 2026",
+      category: "Müügi nõuanded",
     },
   ];
 
@@ -33,14 +30,17 @@ const Blog = () => {
           <div>
             <span className="text-primary font-semibold uppercase tracking-wider text-sm">Blogi</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mt-2">
-              Kasulikud nõuanded
+              Kinnisvaraalased nõuanded
             </h2>
+            <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+              Praktilised mõtted ja nõuanded kinnisvara müügi, ostu ja turu kohta.
+            </p>
           </div>
           <Button 
             variant="outline" 
             className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground self-start md:self-auto"
           >
-            Kõik postitused
+            Vaata kõiki nõuandeid <span aria-hidden="true">→</span>
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -65,10 +65,6 @@ const Blog = () => {
                   <div className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
                     {post.date}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    {post.readTime}
                   </div>
                 </div>
 

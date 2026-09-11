@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-secondary-foreground/10 text-center text-secondary-foreground/50 text-sm">
-          © {new Date().getFullYear()} Toomas Koiv. Kõik õigused kaitstud.
+          © 2026 Toomas Kõiv. Kõik õigused kaitstud.
         </div>
       </div>
     </footer>
