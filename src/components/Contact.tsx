@@ -53,9 +53,9 @@ const Contact = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
                     <item.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-sm text-muted-foreground">{item.label}</div>
-                    <div className="font-semibold text-secondary">{item.value}</div>
+                    <div className="break-words font-semibold text-secondary">{item.value}</div>
                   </div>
                 </a>
               ))}
@@ -63,7 +63,7 @@ const Contact = () => {
 
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              className="h-auto whitespace-normal bg-primary py-3 text-center font-semibold text-primary-foreground hover:bg-primary/90"
               asChild
             >
               <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">

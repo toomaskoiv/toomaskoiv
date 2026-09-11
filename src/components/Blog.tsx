@@ -40,7 +40,7 @@ const Blog = () => {
             variant="outline" 
             className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground self-start md:self-auto"
           >
-            Vaata kõiki nõuandeid <span aria-hidden="true">→</span>
+            Vaata kõiki nõuandeid
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
@@ -49,7 +49,7 @@ const Blog = () => {
           {posts.map((post, index) => (
             <article
               key={post.title}
-              className="card-warm overflow-hidden group cursor-pointer hover-lift"
+              className="card-warm overflow-hidden group cursor-pointer hover-lift flex h-full flex-col"
             >
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-secondary/10 group-hover:bg-secondary/0 transition-colors" />
@@ -60,7 +60,7 @@ const Blog = () => {
                 </div>
               </div>
               
-              <div className="p-6">
+              <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                   <div className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
