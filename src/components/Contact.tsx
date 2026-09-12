@@ -48,14 +48,14 @@ const Contact = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-primary/10 transition-colors group"
+                  className="group flex items-start gap-3 rounded-xl bg-muted/50 p-4 transition-colors hover:bg-primary/10"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <item.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary">
+                    <item.icon className="h-5 w-5 text-primary transition-colors group-hover:text-primary-foreground" />
                   </div>
                   <div className="min-w-0">
                     <div className="text-sm text-muted-foreground">{item.label}</div>
-                    <div className="break-words font-semibold text-secondary">{item.value}</div>
+                    <div className="break-words text-sm font-semibold text-secondary">{item.value}</div>
                   </div>
                 </a>
               ))}
