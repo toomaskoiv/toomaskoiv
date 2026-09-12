@@ -1,5 +1,4 @@
-import { Home, Key, Building2, MessageCircle, ArrowRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Home, Key, Building2, MessageCircle } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -108,20 +107,6 @@ const Services = () => {
                 </ul>
               )}
 
-              <Button
-                variant="ghost" 
-                className={`mt-auto w-fit p-0 font-semibold ${
-                  service.color === "primary" 
-                    ? "text-primary hover:text-primary/80" 
-                    : "text-secondary hover:text-secondary/80"
-                }`}
-                asChild
-              >
-                <a href="#kontakt">
-                  Loe rohkem
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
             </div>
           ))}
         </div>
