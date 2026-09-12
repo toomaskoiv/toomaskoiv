@@ -37,7 +37,7 @@ const Contact = () => {
           <div>
             <span className="text-primary font-semibold uppercase tracking-wider text-sm">Kontakt</span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mt-2 mb-6">
-              Võtame ühendust!
+              Võta ühendust!
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Kas Sul on küsimus kinnisvara kohta, plaanid oma kodu müüa või otsid uut? Võta minuga julgelt ühendust. Arutame Sinu olukorra läbi ja vaatame, milline võiks olla järgmine mõistlik samm.
