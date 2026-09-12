@@ -1,5 +1,8 @@
 import { Calendar, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import pricingApartment from "../assets/blog-pricing-apartment.jpg";
+import tallinnMarket from "../assets/blog-tallinn-market.jpg";
+import sellingMistakes from "../assets/blog-selling-mistakes.jpg";
 
 const Blog = () => {
   const posts = [
@@ -8,18 +11,24 @@ const Blog = () => {
       excerpt: "Mida tasub enne müügihinna määramist arvesse võtta ja kuidas vältida levinumaid hinnastamisvigu?",
       date: "September 2026",
       category: "Müügi nõuanded",
+      image: pricingApartment,
+      imageAlt: "Valgusküllane müügiks ette valmistatud Tallinna korter",
     },
     {
       title: "Kas praegu on õige aeg Tallinnas kinnisvara müüa?",
       excerpt: "Millised turuolukorra märgid aitavad otsustada, kas müügiga alustada praegu või veel oodata?",
       date: "September 2026",
       category: "Turu analüüs",
+      image: tallinnMarket,
+      imageAlt: "Vaade Tallinna kortermajadele kaasaegselt rõdult",
     },
     {
       title: "5 põhjust, miks korter müügis ei lähe",
       excerpt: "Levinumad põhjused, mis võivad müüki pidurdada, ning küsimused, mida tasub oma müügiplaani juures üle vaadata.",
       date: "September 2026",
       category: "Müügi nõuanded",
+      image: sellingMistakes,
+      imageAlt: "Korrastatud korter, mis on valmis ostuhuviliste vastuvõtuks",
     },
   ];
 
@@ -51,7 +60,15 @@ const Blog = () => {
               key={post.title}
               className="card-warm overflow-hidden group cursor-pointer hover-lift flex h-full flex-col"
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
+                <img
+                  src={post.image}
+                  alt={post.imageAlt}
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-secondary/10 group-hover:bg-secondary/0 transition-colors" />
                 <div className="absolute bottom-4 left-4">
                   <span className="bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
