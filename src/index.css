@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Uus Maa brand: Navy #012169, Yellow #FFD100, Light grays #EEF1F6 / #DCE1EC / #CBD0DF */
+    /* Brand palette: Navy #012169, Yellow #FFD100, Light grays #EEF1F6 / #DCE1EC / #CBD0DF */
     --background: 0 0% 100%;
     --foreground: 222 98% 14%;
 

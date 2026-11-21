@@ -12,8 +12,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "E-post",
-      value: "toomas.koiv@uusmaa.ee",
-      href: "mailto:toomas.koiv@uusmaa.ee",
+      value: "toomas.koiv@elamuskv.ee",
+      href: "mailto:toomas.koiv@elamuskv.ee",
     },
     {
       icon: MapPin,
@@ -66,9 +66,9 @@ const Contact = () => {
               className="h-auto whitespace-normal bg-primary py-3 text-center font-semibold text-primary-foreground hover:bg-primary/90"
               asChild
             >
-              <a href="https://uusmaa.ee/toomas-koiv/" target="_blank" rel="noopener noreferrer">
+              <a href="https://elamuskv.ee/kuulutused/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 w-5 h-5" />
-                Vaata minu aktiivseid pakkumisi Uus Maa lehel
+                Vaata minu aktiivseid pakkumisi Eramus Kinnisvara lehel
               </a>
             </Button>
           </div>
