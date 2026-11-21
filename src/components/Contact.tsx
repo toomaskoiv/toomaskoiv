@@ -68,7 +68,7 @@ const Contact = () => {
             >
               <a href="https://elamuskv.ee/kuulutused/" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 w-5 h-5" />
-                Vaata minu aktiivseid pakkumisi Eramus Kinnisvara lehel
+                Vaata minu aktiivseid pakkumisi Elamus Kinnisvara lehel
               </a>
             </Button>
           </div>

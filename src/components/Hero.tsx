@@ -21,7 +21,7 @@ const Hero = () => {
             className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            <span>Eramus Kinnisvara</span>
+            <span>Elamus Kinnisvara</span>
           </div>
 
           <h1 

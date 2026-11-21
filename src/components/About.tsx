@@ -20,8 +20,8 @@ const About = () => {
     },
     {
       icon: Users,
-      title: "Eramus Kinnisvara",
-      description: "Töötan Eramus Kinnisvaras, kus saan kasutada tugeva kinnisvarabüroo teadmisi, kontakte ja võimalusi.",
+      title: "Elamus Kinnisvara",
+      description: "Töötan Elamus Kinnisvaras, kus saan kasutada tugeva kinnisvarabüroo teadmisi, kontakte ja võimalusi.",
     },
   ];
 
@@ -51,7 +51,7 @@ const About = () => {
               Toomas Kõiv
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              Olen kinnisvaramaakler alates 2023. aastast ja töötan Eramus Kinnisvaras. Tegutsen peamiselt Tallinnas ja Harjumaal ning aitan klientidel kinnisvara müüa, osta ja üürida.
+              Olen kinnisvaramaakler alates 2023. aastast ja töötan Elamus Kinnisvaras. Tegutsen peamiselt Tallinnas ja Harjumaal ning aitan klientidel kinnisvara müüa, osta ja üürida.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Enne kinnisvarasse tulekut töötasin aastaid tootmisettevõtetes ning mul on üle 15 aasta juhtimiskogemust. See taust on õpetanud mulle vastutust võtma, inimestega arvestama, keerulisi olukordi lahendama ja asju lõpuni viima.

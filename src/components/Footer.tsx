@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex items-center gap-1 text-secondary-foreground/70">
             <span>Loodud</span>
             <Heart className="w-4 h-4 text-primary fill-primary" />
-            <span>Eramus Kinnisvara partner</span>
+            <span>Elamus Kinnisvara partner</span>
           </div>
         </div>
 
