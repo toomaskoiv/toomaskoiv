@@ -1,7 +1,36 @@
 import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
+import { useState, type FormEvent } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { contactSchema } from "@/lib/contact-validation";
 
 const Contact = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [status, setStatus] = useState<{ kind: 'success' | 'error'; text: string } | null>(null);
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (submitting) return;
+    const form = event.currentTarget;
+    const parsed = contactSchema.safeParse(Object.fromEntries(new FormData(form)));
+    if (!parsed.success) {
+      setStatus({ kind: 'error', text: parsed.error.issues[0]?.message ?? 'Palun kontrolli sisestatud andmeid.' });
+      return;
+    }
+    setSubmitting(true);
+    setStatus(null);
+    try {
+      const { data, error } = await supabase.functions.invoke('contact-submit', { body: parsed.data });
+      if (error || !data?.success) throw new Error('submission failed');
+      setStatus({ kind: 'success', text: 'Aitäh! Sinu sõnum on vastu võetud.' });
+      form.reset();
+    } catch {
+      setStatus({ kind: 'error', text: 'Sõnumit ei õnnestunud saata. Palun proovi uuesti või kirjuta toomas.koiv@elamuskv.ee.' });
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   const contactInfo = [
     {
       icon: Phone,
@@ -78,24 +107,27 @@ const Contact = () => {
             <h3 className="font-display text-2xl font-bold text-secondary mb-6">
               Saada sõnum
             </h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit} aria-busy={submitting}>
+              <input type="text" name="website" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-secondary mb-2">
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-secondary mb-2">
                     Nimi
                   </label>
                   <input
                     type="text"
+                    id="contact-name" name="name" required maxLength={100} autoComplete="name"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                     placeholder="Sinu nimi"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-secondary mb-2">
+                  <label htmlFor="contact-phone" className="block text-sm font-medium text-secondary mb-2">
                     Telefon
                   </label>
                   <input
                     type="tel"
+                    id="contact-phone" name="phone" maxLength={40} autoComplete="tel"
                     className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                     placeholder="+372 XXXX XXXX"
                   />
@@ -103,21 +135,23 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="contact-email" className="block text-sm font-medium text-secondary mb-2">
                   E-post
                 </label>
                 <input
                   type="email"
+                  id="contact-email" name="email" required maxLength={255} autoComplete="email"
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                     placeholder="sinu@email.ee"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="contact-subject" className="block text-sm font-medium text-secondary mb-2">
                   Teema
                 </label>
                 <select
+                  id="contact-subject" name="subject" required
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                 >
                   <option value="">Vali teema</option>
@@ -131,10 +165,11 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-secondary mb-2">
+                <label htmlFor="contact-message" className="block text-sm font-medium text-secondary mb-2">
                   Sõnum
                 </label>
                 <textarea
+                  id="contact-message" name="message" required maxLength={5000}
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none"
                   placeholder="Kirjelda oma soovi..."
@@ -143,11 +178,13 @@ const Contact = () => {
 
               <Button 
                 type="submit"
+                disabled={submitting}
                 size="lg"
                 className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold"
               >
-                Saada sõnum
+                {submitting ? 'Saadan…' : 'Saada sõnum'}
               </Button>
+              {status && <p role={status.kind === 'error' ? 'alert' : 'status'} className={status.kind === 'error' ? 'text-sm text-destructive' : 'text-sm text-secondary'}>{status.text}</p>}
             </form>
           </div>
         </div>

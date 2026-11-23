@@ -1,0 +1,12 @@
+CREATE TABLE public.contact_submissions (
+ id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+ created_at timestamptz NOT NULL DEFAULT now(),
+ name text NOT NULL,
+ phone text NOT NULL DEFAULT '',
+ email text NOT NULL,
+ subject text NOT NULL,
+ message text NOT NULL
+);
+GRANT ALL ON public.contact_submissions TO service_role;
+REVOKE ALL ON public.contact_submissions FROM anon, authenticated;
+ALTER TABLE public.contact_submissions ENABLE ROW LEVEL SECURITY;
